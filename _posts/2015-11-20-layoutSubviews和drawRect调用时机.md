@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 两天面试下来的感受
+title: layoutSubviews和drawRect调用时机
 categories: [笔记]
 tags: [笔记]
 description: write the code, change the world!
