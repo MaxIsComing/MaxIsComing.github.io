@@ -24,7 +24,7 @@ drawRect在以下情况会被调用：<br/>
 <br/>
 <br/>
 drawRect:使用注意点<br/>
-1、若使用UIView绘图，只能在drawRect：方法中获取contextRef进行绘图。其他地方获取到得Hi一个invalidate ref，是不能用于画图的。drawRect：方法不能手动调用，必须通过setNeedsDisplay或者setNeedsDisplayInRect让系统自动调用。<br/>
+1、若使用UIView绘图，只能在drawRect：方法中获取contextRef进行绘图。其他地方获取到一个invalidate ref，是不能用于画图的。drawRect：方法不能手动调用，必须通过setNeedsDisplay或者setNeedsDisplayInRect让系统自动调用。<br/>
 2、如果使用Calayer绘图则只能在drawInContext：中绘制或者delegate中绘制，同样也是调用setNeedDispaly等间接调用drawRect：方法。<br/>
 3、如果要实时画图，不能用gesture，只能用touchBegan等方法来调用setNeedsDisplay。<br/>
 
