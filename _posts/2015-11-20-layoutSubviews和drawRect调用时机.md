@@ -13,7 +13,7 @@ layoutSubviews在下面情况下会被调用：<br/>
 4、滚动一个scrollView的时候会触发layoutSubviews。<br/>
 5、旋转屏幕的时候会触发父view上的layoutSubviews。<br/>
 6、改变一个view的大小也会触发父view的layoutSubviews。<br/>
-7、直接调用setLayoutSubviews。<br/>
+7、直接调用layoutSubviews。<br/>
 <br/>
 <br/>
 drawRect在以下情况会被调用：<br/>
